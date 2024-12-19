@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.83.0"
+  },
+  "name": "portofolio-page",
+  "version": "1.0.0",
+  "main": "jscript.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch assets/sass/_main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vixual-Cloud/Portofolio-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vixual-Cloud/Portofolio-Page/issues"
+  },
+  "homepage": "https://github.com/Vixual-Cloud/Portofolio-Page#readme",
+  "description": ""
+}
