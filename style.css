@@ -69,11 +69,27 @@ body {
 }
 
 .section-about {
-  padding: 6rem 7rem;
+  padding: 7rem 7rem;
+  background-color: #cdcdcd;
 }
-.section-about__card {
-  height: 50rem;
-  background-color: #f7f7f7;
+
+.about-card {
+  display: flex;
+  column-gap: 4rem;
+}
+.about-card__item {
+  background-color: orangered;
+  border-radius: 0.4rem;
+  padding: 3rem 3rem;
+}
+.about-card__image {
+  height: 50%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.about-card__image-file {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

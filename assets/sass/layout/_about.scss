@@ -1,8 +1,28 @@
 .section-about {
-  padding: 6rem 7rem;
+  padding: 7rem 7rem;
+  background-color: $color-grey;
+}
 
-  &__card {
-    height: 50rem;
-    background-color: $color-white;
+.about-card {
+  display: flex;
+  column-gap: 4rem;
+
+  &__item {
+    background-color: orangered;
+    border-radius: 0.4rem;
+    padding: 3rem 3rem;
+  }
+
+  &__text {
+  }
+
+  &__image {
+    height: 50%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    object-fit: cover;
+    &-file {
+      width: 100%;
+    }
   }
 }
