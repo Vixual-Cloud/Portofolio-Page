@@ -18,7 +18,89 @@ html {
 }
 
 body {
+  font-family: ubuntu;
   color: #ededed;
+  line-height: 1.4;
+}
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #ededed, #878787);
+  background-clip: text;
+  color: transparent;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right bottom, #f7f7f7, #0c0c0c);
+  background-clip: text;
+  color: transparent;
+}
+
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 4rem;
+}
+
+.mb-large {
+  margin-bottom: 6rem;
+}
+
+.mb-xl {
+  margin-bottom: 8rem;
+}
+
+.mt-small {
+  margin-top: 2rem;
+}
+
+.mt-medium {
+  margin-top: 4rem;
+}
+
+.mt-large {
+  margin-top: 6rem;
+}
+
+.mt-xl {
+  margin-top: 8rem;
+}
+
+.btn, .btn:link, .btn:visited {
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ededed;
+  text-transform: capitalize;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 0.8rem #115590 inset;
+  position: relative;
+}
+.btn:hover {
+  transform: scale(1.1) translateY(-0.5rem);
+  background-color: #115590;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  background-color: red;
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 35%) scaleX(2);
 }
 
 .header {
@@ -38,7 +120,7 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -69,27 +151,69 @@ body {
 }
 
 .section-about {
-  padding: 7rem 7rem;
-  background-color: #cdcdcd;
+  padding: 7rem 10rem;
+  background-color: #000000;
+}
+.section-about__title {
+  text-align: center;
+}
+
+.break-line {
+  margin-top: -7rem;
+  height: 0.5rem;
+  background-color: #ededed;
 }
 
 .about-card {
   display: flex;
-  column-gap: 4rem;
+  column-gap: 3rem;
+  justify-content: space-between;
 }
 .about-card__item {
-  background-color: orangered;
-  border-radius: 0.4rem;
+  background-image: linear-gradient(to right bottom, rgba(135, 135, 135, 0.15), rgba(12, 12, 12, 0));
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 1rem 3rem rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5rem);
   padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 25%;
+  transition: all 0.3s ease-in-out;
+}
+.about-card__item:hover {
+  transform: scale(1.1);
+  box-shadow: 0.3rem 1rem 3rem rgba(0, 0, 0, 0.4), -0.4rem -1.4rem 4rem rgba(135, 135, 135, 0.4) inset;
+}
+.about-card__item:hover .about-card__image > .about-card__image-file {
+  transform: scale(1.3);
+}
+.about-card__title {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #878787;
+}
+.about-card__text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #ededed;
 }
 .about-card__image {
-  height: 50%;
   border-radius: 0.4rem;
+  height: 100%;
+  width: 100%;
+  flex: 1;
   overflow: hidden;
-  object-fit: cover;
+  transition: all 0.6s ease-in-out;
 }
 .about-card__image-file {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease-in-out;
+}
+
+.about-button {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
