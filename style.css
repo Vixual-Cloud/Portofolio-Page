@@ -31,12 +31,28 @@ body {
   background-clip: text;
   color: transparent;
 }
+.heading-primary--dark {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #878787, #0c0c0c);
+  background-clip: text;
+  color: transparent;
+}
 
 .heading-secondary {
   font-weight: 700;
   font-size: 2.1rem;
   text-transform: uppercase;
   background-image: linear-gradient(to right bottom, #f7f7f7, #0c0c0c);
+  background-clip: text;
+  color: transparent;
+}
+.heading-secondary--light {
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right bottom, #f7f7f7, #cdcdcd);
   background-clip: text;
   color: transparent;
 }
@@ -78,29 +94,20 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 1.6rem;
-  color: #ededed;
+  color: #60b1f0;
   text-transform: capitalize;
   background-color: transparent;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
   box-shadow: 0 0 0.8rem #115590 inset;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .btn:hover {
   transform: scale(1.1) translateY(-0.5rem);
-  background-color: #115590;
-}
-.btn::after {
-  content: "";
-  display: inline-block;
-  background-color: red;
-  height: 60%;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0, 35%) scaleX(2);
+  background-color: #3091dc;
+  padding: 1rem 4rem;
+  color: #ededed;
 }
 
 .header {
@@ -214,6 +221,65 @@ body {
 
 .about-button {
   text-align: center;
+  margin-bottom: 6rem;
+}
+
+.showcase {
+  background-color: #ededed;
+  padding: 7rem 10rem;
+  margin-top: -11.2rem;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+}
+.showcase__title {
+  text-align: center;
+}
+.showcase__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  justify-content: center;
+  column-gap: 5rem;
+  row-gap: 5rem;
+}
+.showcase__shape {
+  width: 28%;
+  height: 50rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0.6rem 1.7rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.showcase__shape:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2.1rem rgba(0, 0, 0, 0.25);
+}
+.showcase__shape:hover .showcase__caption {
+  transform: translate(-50%, -25%);
+  opacity: 1;
+}
+.showcase__shape:hover .showcase__photo {
+  transform: scale(1.2);
+  filter: brightness(50%) blur(0.2rem);
+}
+.showcase__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.showcase__caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 2.5rem;
+  transition: all 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
