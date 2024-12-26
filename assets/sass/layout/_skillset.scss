@@ -3,6 +3,8 @@
   background-color: $color-grey-dark;
   padding: 7rem 10rem;
   column-gap: 5rem;
+  margin-top: -11.2rem;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .skillcard {
