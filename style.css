@@ -222,29 +222,28 @@ body {
 .about-button {
   text-align: center;
   margin-bottom: 6rem;
+  margin-top: 6rem;
 }
 
 .showcase {
-  background-color: #ededed;
+  background-image: linear-gradient(to bottom, #0c0c0c, #115590);
   padding: 7rem 10rem;
-  margin-top: -11.2rem;
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -9rem;
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
 }
 .showcase__title {
   text-align: center;
 }
 .showcase__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 0;
-  justify-content: center;
-  column-gap: 5rem;
-  row-gap: 5rem;
-  margin-bottom: 15rem;
+  display: grid;
+  height: 80rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1fr 1.2fr 1.2fr;
+  grid-gap: 4rem;
+  margin-bottom: 8rem;
 }
 .showcase__shape {
-  width: 28%;
-  height: 50rem;
+  width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -255,13 +254,49 @@ body {
   transform: translateY(-1rem);
   box-shadow: 0 1rem 2.1rem rgba(0, 0, 0, 0.25);
 }
-.showcase__shape:hover .showcase__caption {
-  transform: translate(-50%, -25%);
-  opacity: 1;
-}
 .showcase__shape:hover .showcase__photo {
   transform: scale(1.2);
   filter: brightness(50%) blur(0.2rem);
+}
+.showcase__shape--6 {
+  grid-row: 2/-1;
+  grid-column: 3/4;
+}
+.showcase__shape--6:hover .showcase__caption--6 {
+  transform: translate(-50%, -10%);
+  opacity: 1;
+}
+.showcase__shape--5 {
+  grid-row: 3/-1;
+  grid-column: 2/3;
+}
+.showcase__shape--5:hover .showcase__caption--5 {
+  transform: translate(-50%, -30%);
+  opacity: 1;
+}
+.showcase__shape--2 {
+  grid-row: 1/span 2;
+  grid-column: 2/3;
+}
+.showcase__shape--2:hover .showcase__caption--2 {
+  transform: translate(-50%, -30%);
+  opacity: 1;
+}
+.showcase__shape--1 {
+  grid-row: 1/span 3;
+  grid-column: 1/2;
+}
+.showcase__shape--1:hover .showcase__caption--1 {
+  transform: translate(-50%, -10%);
+  opacity: 1;
+}
+.showcase__shape--3:hover .showcase__caption--3 {
+  transform: translate(-50%, -47%);
+  opacity: 1;
+}
+.showcase__shape--4:hover .showcase__caption--4 {
+  transform: translate(-50%, -47%);
+  opacity: 1;
 }
 .showcase__photo {
   width: 100%;
@@ -286,10 +321,10 @@ body {
 .skillset {
   display: flex;
   background-color: #878787;
-  padding: 7rem 10rem;
+  padding: 10rem 10rem;
   column-gap: 5rem;
-  margin-top: -11.2rem;
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -7.5rem;
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .skillcard {
