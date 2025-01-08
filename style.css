@@ -329,8 +329,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
   background-color: #f7f7f7;
   padding-left: 10rem;
+  text-align: end;
 }
 .skillset__text p {
   font-size: 1.5rem;
@@ -342,6 +344,8 @@ body {
   width: 70%;
   background-color: #f7f7f7;
   padding: 6rem 0;
+  display: flex;
+  align-items: center;
 }
 .skillset__btn {
   width: 43%;
